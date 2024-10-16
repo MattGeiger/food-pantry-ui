@@ -13,15 +13,15 @@ const TitleBar = ({ title }) => {
   };
 
   return (
-    <div className="title-bar">
-      <button className="nav-button" onClick={handlePrevClick}>
-        &lt;
+    <header className="title-bar">
+      <button className="nav-button" onClick={handlePrevClick} aria-label="Previous">
+        <span aria-hidden="true">&#8249;</span>
       </button>
       <h1 className="title">{title}</h1>
-      <button className="nav-button" onClick={handleNextClick}>
-        &gt;
+      <button className="nav-button" onClick={handleNextClick} aria-label="Next">
+        <span aria-hidden="true">&#8250;</span>
       </button>
-    </div>
+    </header>
   );
 };
 

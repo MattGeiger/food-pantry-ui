@@ -2,18 +2,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 32px 16px;
   background-color: #f0f0f0;
   border-bottom: 1px solid #e0e0e0;
   width: 100%;
   box-sizing: border-box;
+  height: 96px; /* 32px top margin + 32px bottom margin + 32px minimum height */
 }
 
 .title {
   margin: 0;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 600;
   color: #333;
+  text-align: center;
+  flex-grow: 1;
+  max-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
 }
 
 .nav-button {
@@ -21,15 +29,32 @@
   border: none;
   font-size: 24px;
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
   color: #333;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-button:hover {
   background-color: #e0e0e0;
+}
+
+@media (min-width: 768px) {
+  .title-bar {
+    padding: 32px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .nav-button {
+    width: 48px;
+    height: 48px;
+    font-size: 32px;
+  }
 }
