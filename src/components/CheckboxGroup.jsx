@@ -1,4 +1,5 @@
 import React from 'react';
+import './CheckboxGroup.css';
 
 const CheckboxGroup = ({ items, onItemChange }) => {
   return (
@@ -11,7 +12,7 @@ const CheckboxGroup = ({ items, onItemChange }) => {
               checked={item.available}
               onChange={() => onItemChange(item.id, !item.available)}
             />
-            <span>{item.name}</span>
+            <span className="checkbox-label">{item.name}</span>
           </label>
         </div>
       ))}
