@@ -1,0 +1,30 @@
+.item-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item-checkbox {
+  margin-right: 10px;
+}
+
+.item-name {
+  flex-grow: 1;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control button {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.quantity-control span {
+  min-width: 30px;
+  text-align: center;
+}
