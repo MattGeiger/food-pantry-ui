@@ -1,7 +1,8 @@
 .select-container {
   width: 96px; /* changed size to be more compact*/
   height: 32px;
-  position: relative;
+  margin-left: 0px; /* Ensure it aligns with the checkbox text */
+  margin-top: 4px;   /* Small margin below the text */
 }
 
 .select-container select {

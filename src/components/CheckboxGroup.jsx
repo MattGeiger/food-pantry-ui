@@ -1,7 +1,8 @@
 import React from 'react';
+import SelectStyleNumberInput from './SelectStyleNumberInput';
 import './CheckboxGroup.css';
 
-const CheckboxGroup = ({ items, onItemChange }) => {
+const CheckboxGroup = ({ items, onItemChange, onLimitChange }) => {
   return (
     <div className="checkbox-group">
       {items.map((item) => (
@@ -14,6 +15,10 @@ const CheckboxGroup = ({ items, onItemChange }) => {
             />
             <span className="checkbox-label">{item.name}</span>
           </label>
+          <SelectStyleNumberInput 
+            value={item.limit}
+            onChange={(newLimit) => onLimitChange(item.id, newLimit)}
+          />
         </div>
       ))}
     </div>
